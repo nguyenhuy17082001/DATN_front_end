@@ -1,0 +1,103 @@
+/* .navbar{
+    background-color: rgb(89, 92, 91) !important;
+} */
+.navbar li .dropdown-item a{
+    color: rgb(0, 0, 0) !important;
+    text-decoration: none
+}
+.navbar .nav-link:hover{
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none;
+}
+.navbar-nav .nav-link{
+    color: rgb(250, 29, 29);
+}
+li .nav-item{
+    color: aqua;
+}
+.nav-item{
+    color: #f1f1f1 !important
+}
+/*headroom thanh tab cuon*/
+header{
+    position: sticky;
+    position: -webkit-sticky;
+    /* position: fixed; */
+    top: 0;
+    right:0;
+    /* width: 90%;
+    margin-left: 10%; */
+}
+
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+  }
+  .headroom--pinned {
+    transform: translateY(0%);
+  }
+  .headroom--unpinned {
+    transform: translateY(-100%);
+  }
+
+.dropdown-menu{
+    margin-right: 0px;
+}
+.container1{
+    justify-content:flex-end;
+}
+
+.dropdown-menu[data-bs-popper]{
+    left:auto !important;
+    right: 0;
+}
+.content1{
+    right: 0;
+}
+
+.navbar-toggler{
+    float: left;
+}
+.menu-phu{
+    width: fit-content;
+}
+
+body {font-family: "Lato", sans-serif;}
+
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+/* top: 0; */
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+  
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+/* .table{
+    position: fixed;
+} */
