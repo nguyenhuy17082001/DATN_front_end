@@ -61,6 +61,10 @@ header{
 .menu-phu{
     width: fit-content;
 }
+.navbar-text {
+    padding-right:40%;
+
+}
 
 body {font-family: "Lato", sans-serif;}
 
@@ -89,7 +93,7 @@ body {font-family: "Lato", sans-serif;}
 }
 
 .main {
-  margin-left: 160px; /* Same as the width of the sidenav */
+  margin-left: 153px; /* Same as the width of the sidenav */
   padding: 0px 10px;
   
 }
