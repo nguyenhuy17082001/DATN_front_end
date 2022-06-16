@@ -1,0 +1,39 @@
+body {font-family: "Lato", sans-serif;}
+.content{
+    margin-top: 80px;
+    margin-right: 15%; 
+    margin-left: 15%;
+}
+.top-tab_title.title-active {
+    background-color: rgba(25,26,26,.8);
+    color: #fff;
+    display: inline-block;
+    padding: 4px 8px;
+}
+
+.top-tab_title {
+    border-bottom: 2px solid transparent;
+    color: #aaa;
+    font-weight: 700;
+    margin-right: 10px;
+    font-family: "fantasy";
+}
+
+.top-tab_title.title-active i {
+    color: #f0bc00;
+    display: inline;
+}
+
+.fa, .far, .fas {
+    /* font-family: "Font Awesome 5 Free"; */
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+} 
+
+/*test slide show*/
+
+
