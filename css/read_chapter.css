@@ -1,4 +1,14 @@
 
+
+.dropdown-menu[data-bs-popper]{
+    left:auto !important;
+    right: 0;
+}
+.dropdown-menu{
+    margin-right: 0px;
+}
+
+
 .vc{
     width: 80%;
     text-align: center;
@@ -47,9 +57,10 @@
     padding: 8px;
   }
   .content-chapter{
-    max-width: 98%;
+    max-width: 75%;
     text-align: center;
-  
+	margin-left: auto;
+    margin-right: auto;
   }
   .content-chapter img{
     display: block;
@@ -60,4 +71,16 @@
       height: auto;
       border: solid rgb(56, 187, 56) 1px;
   }
+  .button-home-story{
+	  max-width:70%;
+	  margin-top:5%;
+	  margin-left:auto;
+	  margin-right:auto;
+	  
+  }
+  /*
+  select{
+	  border-radius:20px!important;
+  }
+  */
   body {font-family: "Lato", sans-serif;}

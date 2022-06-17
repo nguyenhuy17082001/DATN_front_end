@@ -37,17 +37,19 @@ li .nav-item{
     transform: translateY(-100%);
   }
 
-.dropdown-menu{
-    margin-right: 0px;
-}
+
 .container1{
     justify-content:flex-end;
 }
-
+<!--dropdown-menu-->
+.dropdown-menu{
+    margin-right: 0px;
+}
 .dropdown-menu[data-bs-popper]{
     left:auto !important;
     right: 0;
 }
+<!--end dropdown-menu-->
 .content1{
     right: 0;
 }
