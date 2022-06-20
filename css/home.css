@@ -11,8 +11,8 @@ body {font-family: "Lato", sans-serif;}
 
 .content{
     margin-top: 80px;
-    margin-right: 15%; 
-    margin-left: 15%;
+    margin-right: 11%; 
+    margin-left: 12%;
 }
 .top-tab_title.title-active {
     background-color: rgba(25,26,26,.8);
@@ -43,7 +43,175 @@ body {font-family: "Lato", sans-serif;}
     line-height: 1;
     -webkit-font-smoothing: antialiased;
 } 
+.truyen-moi-cap-nhat{
+    max-width: 100%;
+}
+.title{
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-bottom: solid gray;
+}
+.title-1{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 4px 8px;
+    color: #fff;
+    
+}
+.title-2{
+    padding: 4px 8px;
+    color: rgb(0, 0, 0);
+    
+}
+.thumb-item-flow {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 
+.thumb-item-flow .thumb-wrapper {
+    color: #fff;
+    position: relative;
+}
+
+.thumb-item-flow .thumb-detail {
+    background: linear-gradient(180deg,transparent 0,rgba(0,0,0,.8) 67%,rgba(0,0,0,.8));
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+}
+
+.thumb-item-flow .thumb_attr.chapter-title {
+    font-weight: 700;
+    font-size:small;
+}
+
+.thumb-item-flow .thumb_attr.volume-title {
+    color: #17deb3;
+    
+}
+
+.thumb-item-flow .thumb_attr.series-title {
+    font-size: 14px;
+    /* font-size: 1.4rem; */
+    font-weight: 700;
+    height: 4.2rem;
+    line-height: 22px;
+    /* line-height: 2rem; */
+    margin-bottom: 4px;
+    margin-top: 6px;
+    overflow: hidden;
+    text-align: center;
+}
+#tba-list .tba-item .info-item, #tba-list .tba-item .tba-detail .series-title, .attached-series .series-info .series-name, .bookmark-item .series-title, .comment-item .comment-location, .comment-item .comment-user_name, .comment-item .series-name, .comment-item-at-index .comment-location, .comment-item-at-index .comment-user_name, .comment-item-at-index .series-name, .daily-recent_views .sub-line, .last-topics .topic-data, .licensed-list-page #licensed-list .info-item, .line-ellipsis, .new-series .list-detail .series-title, .page-author .author_name, .private-tabs header .user-name, .rank-cirle .series-detail .series-title, .thumb-item-flow .thumb_attr.chapter-title, .thumb-item-flow .thumb_attr.volume-title, .user-pm .mail-name, .user-pm .sender-name, table.broad-table tr td, table.broad-table tr td .topic-username, table.broad-table tr th, table.listext-table tr td, table.listext-table tr td small, table.listext-table.has-covers tr td .series-name, ul.bookmarks_list .chapter-title, ul.bookmarks_list .volume-title, ul.list-chapters li .chapter-name, ul.mail-participants li, ul.others-list li small {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* .img-in-ratio {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.a6-ratio>.content {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+} */
+.a6-ratio>.content {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.img-in-ratio {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+.a6-ratio {
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color:#10b18e; 
+}
+.thumb-item-flow .thumb_attr.series-title a:hover{
+   
+        color:#10b18e; 
+        text-decoration:none; 
+        cursor:pointer;  
+   
+}
+.title-story{
+    font-size: 16px;
+    /* font-size: 1.6rem; */
+    font-weight: 700;
+    height: 50px;
+    line-height: 22px;
+    margin-bottom: 4px;
+    margin-top: 6px;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+.thumb-see-more {
+    background-color: rgba(0,0,0,.5);
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.thumb-see-more .see-more-inside {
+    border: 1px solid #eee;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+.thumb-see-more .see-more-content {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+.thumb-see-more .see-more-content .see-more-icon {
+    font-size: 40px;
+    /* font-size: 4rem; */
+}
+.owl-theme .owl-nav {
+    margin-top: 0;
+}
+.col-md-6{
+    border: solid red 1px;
+}
+.series-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.series-summary{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 72px;
+}
+h4{
+    font-weight: 700;
+}
+.lastest-chapter{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 /*test slide show*/
-
-

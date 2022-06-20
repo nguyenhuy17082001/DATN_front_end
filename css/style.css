@@ -95,8 +95,12 @@ body {font-family: "Lato", sans-serif;}
   margin-left: 153px; /* Same as the width of the sidenav */
   padding: 0px 10px;
   margin-top: 6%;
+  
 }
 
+.active{
+  background-color: yellow;
+}
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
@@ -105,3 +109,27 @@ body {font-family: "Lato", sans-serif;}
     position: fixed;
 } */
 
+/* //login// */
+.text-center{
+  text-align: center;
+}
+label{
+  float: left;
+}
+.form-register{
+  margin-top: 10%;
+  margin-right: 30%;
+  margin-left: 30%;
+  border: solid 1px;
+  padding: 3%;
+  display: inline-block;
+  /* margin-bottom: auto; */ 
+}
+.form-login{
+  margin-top: 10%;
+}
+.title-form
+{
+  margin-top: 0;
+  padding: 0;
+}
