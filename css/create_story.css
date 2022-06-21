@@ -1,0 +1,14 @@
+.input-create-story{
+/* margin-right: 20px; */
+border: solid 1px;
+padding: 2%;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+/* .col-md-2, .col-md-10{
+    float: left;
+} */
+label{
+    margin-right: 8%;
+}

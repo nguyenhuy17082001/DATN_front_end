@@ -12,3 +12,8 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 
 
+//Chosen
+        $(document).ready(function () {
+        $('.chosen-select').chosen({width:"90%"});
+        });
+ 
