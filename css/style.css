@@ -41,7 +41,7 @@ li .nav-item{
 .container1{
     justify-content:flex-end;
 }
-<!--dropdown-menu-->
+/*dropdown-menu*/
 .dropdown-menu{
     margin-right: 0px;
 }
@@ -49,7 +49,7 @@ li .nav-item{
     left:auto !important;
     right: 0;
 }
-<!--end dropdown-menu-->
+/*end dropdown-menu*/
 .content1{
     right: 0;
 }
@@ -114,7 +114,7 @@ label{
   float: left;
 }
 .form-register{
-  margin-top: 10%;
+  margin-top: 4%;
   margin-right: 30%;
   margin-left: 30%;
   border: solid 1px;
@@ -123,7 +123,7 @@ label{
   /* margin-bottom: auto; */ 
 }
 .form-login{
-  margin-top: 10%;
+  margin-top: 7%;
 }
 .title-form
 {
@@ -161,3 +161,20 @@ label{
   position: relative;
   left: 30px;
 } */
+.data-content{
+   /* Same as the width of the sidenav */
+  padding: 0px 10px;
+  margin-top: 1%;
+}
+.nav-item {
+  color: #f1f1f1 !important;
+  margin-right: 11px !important;
+}
+.search-manager{
+  width: 50%;
+  float: right;
+  margin-bottom: 1%;
+}
+.navbar-nav .nav-link {
+  color: rgb(238, 252, 49);
+}

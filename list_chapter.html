@@ -22,58 +22,49 @@
     <title>List Chapter</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="javascript:void(0)"><img src="./images/logo.png" height="50"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mynavbar">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Link</a></li>
-                  <li><a class="dropdown-item" href="#">Another link</a></li>
-                  <li><a class="dropdown-item" href="#">A third link</a></li>
-                </ul>
-              </li>
+  <nav class="navbar navbar-expand-sm navbar bg-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="javascript:void(0)">Bảng Điều Khiển</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)"><i class="fa fa-fw fa-home"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)"><i class="fa fa-fw fa-pencil-square"></i>Thêm Truyện</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Quản Lí Truyện</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Truyện Đã Đăng</a></li>
+              <li><a class="dropdown-item" href="#">Truyện Đã Ẩn</a></li>
+              
+            </ul>
+          </li>
+        </ul>
+      </div>
+        
+    </div>
+        <div class="">
+          <div class=" nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><img src="./images/Avatar/avatar.jpg" class="rounded-pill" height="50"></a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i>Trang Cá Nhân</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa fa-pencil"></i>Quản Lí Truyện</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa fa-heart"></i>Truyện Yêu Thích</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa fa-power-off"></i>Đăng Xuất</a></li>
             </ul>
           </div>
-            <form class="d-flex">
-              <input class="form-control me-2" type="text" placeholder="Search">
-              <button class="btn btn-primary" type="button">Search</button>
-            </form>
         </div>
-            <div class="">
-              <div class=" nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><img src="./images/logo.png" class="rounded-pill" height="50"></a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i>Trang Cá Nhân</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa fa-pencil"></i>Quản Lí Truyện</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa fa-heart"></i>Truyện Yêu Thích</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa fa-power-off"></i>Đăng Xuất</a></li>
-                </ul>
-              </div>
-            </div>
-      </nav>
-      <div class="main">
-        <div class="sidebar ">
-       <a href="#"><i class="fa fa-fw fa-pencil-square"></i>Thêm Truyện</a>
-       <a href="#home" ><i class="fa fa-fw fa-book"></i> Truyện Đã Đăng</a>
-       <a href="#services"><i class="fa fa-fw fa-book"></i> Truyện Đã Ẩn</a>
-       
-     </div>
-      <main class="">
+  </nav>
+     
+      <main class="data-content">
         <div class="table-content">
             <p class="title-table">
                 <div class="title-main">
@@ -83,6 +74,13 @@
                         <button class="btn btn-success">Thêm Chương</button>
                     </span>
                 </div>
+
+                <div class="search-manager">
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Tìm Chương">
+                    <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+                  </form>
+                 </div>
                 
             </p>
             <table class="table table-striped secondary table-bordered">
@@ -154,5 +152,7 @@
         </div>
         
       </main>
+
+      
 </body>
 </html>

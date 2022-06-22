@@ -12,3 +12,12 @@ padding: 2%;
 label{
     margin-right: 8%;
 }
+.input-create-story{
+    margin-top: 1%;
+    margin-right: 7%;
+    margin-left: 7%;
+    border: solid 1px;
+    padding: 3%;
+    /* display: inline-block; */
+    /* margin-bottom: auto;*/
+}

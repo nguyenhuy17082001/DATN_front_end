@@ -24,10 +24,10 @@
 <!--ckediter-->
 <script src="https://cdn.ckeditor.com/4.19.0/full/ckeditor.js"></script>
 <!--end ckediter-->
-    <link rel="stylesheet" href="./css/create_story.css">
+    <link rel="stylesheet" href="./css/edit_story.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/js.js"></script>
-    <title>Create Story</title>
+    <title>Edit Story</title>
 </head>
 <body>
     <div class="">
@@ -79,8 +79,8 @@
                     <div class="table-content">
                         <p class="title-table">
                             <div class="title-main">
-                                <span class="title-1">Thêm Truyện</span>
-                                <span class="title-2">Mới</span>
+                                <span class="title-1">Sửa</span>
+                                <span class="title-2">Truyện</span>
                                 <!-- <span class="button-create">
                                     <button class="btn btn-success">Thêm Truyện</button>
                                 </span> -->
@@ -94,7 +94,7 @@
                                     <label class="control-label" for="Name">Tên Truyện</label>
                                 </div>
                                 <div class="col-md-10">
-                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tên Truyện">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tên Truyện" value="Ore no Onna Tomodachi ga Saikou ni Kawaii">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -102,7 +102,7 @@
                                     <label class="control-label"  for="Name">Url Truyện</label>
                                 </div>
                                 <div class="col-md-10">
-                                    <input type="text" readonly="readonly"  value="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Url Truyện" >
+                                    <input type="text" readonly="readonly"  value="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Url Truyện" value="">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -110,7 +110,7 @@
                                     <label class="control-label" for="Name">Tên Khác</label>
                                 </div>
                                 <div class="col-md-10">
-                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tên Khác">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tên Khác" value="She’s the Cutest… But We’re Just Friends!">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -118,24 +118,27 @@
                                     <label class="control-label" for="Name">Tác Giả</label>
                                 </div>
                                 <div class="col-md-10">
-                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tác Giả">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tác Giả" value="Akamitsu Awamura">
                                 </div>
                             </div>
     
                                 <div class="form-group">
                                   <label for="">Ảnh Bìa</label>
-                                  <input type="file" class="form-control" id="exampleFormControlFile1" name="image">
+                                  <input type="file" class="form-control" id="exampleFormControlFile1" value="">
                                 </div>
-                              
+                                <img src="./images/BiaTruyen/Ore no Onna Tomodachi ga Saikou ni Kawaii.jpg" height="80">
+                                <br>
                             <div class="form-group">
                                 <div class="col-md-2">
                                     <span>Thể Loại</span>
                                 </div>
                                 <div>
                                     <select name ="category" data-placeholder="Chọn Thể Loại..." class="chosen-select" multiple>
-                                        <option value="Action">Action</option>
-                                        <option value="">Drama</option>
-                                        <option value="Romance">Romance</option>
+                                        <option value=""></option>
+                                        <option selected value="Action">Action</option>
+                                        <option selected value="">Drama</option>
+                                        <option selected value="Romance">Romance</option>
+                                        
                                         <option value="Comedy">Comedy</option>
                                         <option value="Isekai">Isekai</option>
                                         <option value="School Life">School Life</option>
@@ -166,15 +169,15 @@
                                     <label class="control-label" for="Name">Tình Trạng</label>
                                 </div>
                                 <div class="col-md-10">
-                                    <select>
-                                        <option value="">Đang Tiến Hành</option>
+                                    <select name="state">
+                                        <option value="1">Đang Tiến Hành</option>
                                         <option value="">Hoàn Thành</option>
                                         <option value="">Tạm Ngưng</option>
                                     </select>
                                 </div>
                             </div>
                             
-                            <button type="submit" class="btn btn-primary">Thêm Truyện</button>
+                            <button type="submit" class="btn btn-primary">Cập Nhật Truyện</button>
                           </form>
                     </div>
                   </div>
@@ -182,6 +185,7 @@
             </section>
 
             <div class="" style="height: 300px;">
+
             </div>
     </div>
     <!---->
