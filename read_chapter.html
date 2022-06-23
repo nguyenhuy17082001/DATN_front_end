@@ -14,53 +14,26 @@
 </head>
 
 <body>
+  <!--nut thanh ben phai duoi cung-->
+  <section id="rd_side_icon">
+    <!-- @if($chapter->id == $min_id->id) -->
+    <!--kiem tra chap dau-->
+    <!-- <a href="" class="rd_sd-button_item col text-center {{ $chapter->id == $min_id->id ? 'isDisable' : '' }}"><i class="fas fa-backward"></i></a> -->
+    <!-- end kiem tra chap dau-->
+    <!-- @else -->
+        <a href="{{ url('chapter/'.$previous_chapter_id.'-'.$previous_chapter_slug->slug_chapter) }}" class="rd_sd-button_item col text-center {{ $chapter->id == $min_id->id ? 'isDisable' : '' }}"><i class="fa fa-backward"></i></a>
+    <!-- @endif                 -->
+        <a href="{{ url('novel/'.$chapter->novel->slug_novelname) }}" class="rd_sd-button_item col text-center"><i class="fa fa-home"></i></a>
+    <!-- @if($chapter->id == $max_id->id) -->
+    <!--kiem tra chap cuoi-->
+        <!-- <a href="" class="rd_sd-button_item col text-center {{ $chapter->id == $max_id->id ? 'isDisable' : '' }}"><i class="fas fa-forward"></i></a> -->
+    <!--end kiem tra chap cuoi-->
+        <!-- @else              -->
+        <a href="{{ url('chapter/'.$next_chapter_id.'-'.$next_chapter_slug->slug_chapter ) }}" class="rd_sd-button_item col text-center {{ $chapter->id == $max_id->id ? 'isDisable' : '' }}"><i class="fa fa-forward"></i></a>
+    <!-- @endif -->
+</section>
+<!--end nut thanh ben phai duoi cung-->
 
-<div class="vc">
-  <nav class="navbar navbar-expand-sm  bg-dark fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="javascript:void(0)"><img src="./images/logo.png" height="50"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mynavbar">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Thể Loại</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Drama</a></li>
-              <li><a class="dropdown-item" href="#">Harem</a></li>
-              <li><a class="dropdown-item" href="#">Action</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-        <form class="d-flex">
-          <input class="form-control me-2" type="text" placeholder="Search">
-          <button class="btn btn-primary" type="button">Search</button>
-        </form>
-    </div>
-        <div class="">
-          <div class=" nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><img src="./images/Avatar/avatar.jpg" class="rounded-pill" height="50"></a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i>Trang Cá Nhân</a></li>
-              <li><a class="dropdown-item" href="#"><i class="fa fa-pencil"></i>Quản Lí Truyện</a></li>
-              <li><a class="dropdown-item" href="#"><i class="fa fa-heart"></i>Truyện Yêu Thích</a></li>
-              <li><a class="dropdown-item" href="#"><i class="fa fa-power-off"></i>Đăng Xuất</a></li>
-            </ul>
-          </div>
-        </div>
-  </nav>
-</div>
 
 <header>
     <div class="title-story col-md-12">

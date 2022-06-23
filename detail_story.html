@@ -16,6 +16,10 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
     <!--end owl.carousel-->
+
+    <!--ranting-->
+    <link rel="stylesheet" href="./rating/starrr.css">
+    <!--end rating-->
     <link rel="stylesheet" href="./css/detail_story.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/js.js"></script>
@@ -53,8 +57,8 @@
                 </ul>
               </div>
                 <form class="d-flex">
-                  <input class="form-control me-2" type="text" placeholder="Search">
-                  <button class="btn btn-primary" type="button">Search</button>
+                  <input class="form-control me-2" type="text" placeholder="Tìm Kiếm">
+                  <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
                 </form>
             </div>
                 <div class="">
@@ -162,11 +166,30 @@
                                         </p>
                                     </li>
                                 </ul>
-                                <div class="favorite-button">
-                                    <a class="favorite-link btn btn-danger" href="">
-                                        <i class="fa fa-heart"></i>
-                                        <span>Yêu Thích</span>
-                                    </a>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="rating">
+                                            <p>Đánh Giá</p>
+                                            <div class='starrr' id='star1'></div>
+                                        </div>
+                                        <span class='your-choice-was' style='display: none;'>
+                                            Bạn Đang Chọn <span class='choice'></span> Sao
+                                        </span>
+                                        <form>
+                                        <div class="form-group">
+                                            <input type="" class="form-control" name="rating_star" id="rating_star">
+                                            
+                                        </div>
+                                    </form>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="favorite-button">
+                                            <a class="favorite-link btn btn-danger" href="">
+                                                <i class="fa fa-heart"></i>
+                                                <span>Yêu Thích</span>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -293,9 +316,155 @@
                     </div>
                     <!--end list chapter-->
                 </div>
-                <div class="col-md-4">
-
-                </div>
+                
+                    <div class="col-xs-12 col-sm-12 col-md-4 float-right">
+                        <div class="row top-group">
+                            <div class="col-12 no-push push-3-m col-md-6 no-push-l col-lg-12">
+                                <section class="series-users">
+                                    <main>
+                                        <div class="series-owner group-mem">
+                                            <img src="./images/Avatar/avatar.jpg" alt="Poster's avatar">
+                                                <div class="series-owner-title">
+                                                    <span class="series-owner_name"><a href="">Admin</a></span>
+                                                </div>
+                                        </div>
+                                    </main>
+                                </section>
+                            </div>
+                        </div>
+                        <!-- @php
+                            $count_novel_uploaded = count($novel_uploaded);
+                        @endphp
+                        @if($count_novel_uploaded>0) -->
+                            <section class="basic-section">
+                                <header class="sect-header">
+                                    <span class="sect-title">Truyện Cùng Người Đăng</span>
+                                </header>
+                                <main class="d-lg-block">
+                                    <ul class="others-list">
+                                        <!-- @foreach($novel_uploaded as $novel_up) -->
+                                            <li>
+                                                <div class="others-img no-padding">
+                                                    <div class="a6-ratio">
+                                                        <div class="content img-in-ratio"> 
+                                                            <img  src="./images/BiaTruyen/Ore no Onna Tomodachi ga Saikou ni Kawaii.jpg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="others-info">
+                                                    <h5 class="others-name"><a href="">Ore no Onna Tomodachi ga Saikou ni Kawaii</a></h5>
+                                                    <small class="series-summary-2">Ore no Onna Tomodachi ga Saikou ni Kawaii Ore no Onna Tomodachi ga Saikou ni Kawaii</small>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="others-img no-padding">
+                                                    <div class="a6-ratio">
+                                                        <div class="content img-in-ratio"> 
+                                                            <img  src="./images/BiaTruyen/Ore no Onna Tomodachi ga Saikou ni Kawaii.jpg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="others-info">
+                                                    <h5 class="others-name"><a href="">Ore no Onna Tomodachi ga Saikou ni Kawaii</a></h5>
+                                                    <small class="series-summary-2">Ore no Onna Tomodachi ga Saikou ni Kawaii Ore no Onna Tomodachi ga Saikou ni Kawaii</small>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="others-img no-padding">
+                                                    <div class="a6-ratio">
+                                                        <div class="content img-in-ratio"> 
+                                                            <img  src="./images/BiaTruyen/Ore no Onna Tomodachi ga Saikou ni Kawaii.jpg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="others-info">
+                                                    <h5 class="others-name"><a href="">Ore no Onna Tomodachi ga Saikou ni Kawaii</a></h5>
+                                                    <small class="series-summary-2">Ore no Onna Tomodachi ga Saikou ni Kawaii Ore no Onna Tomodachi ga Saikou ni Kawaii</small>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="others-img no-padding">
+                                                    <div class="a6-ratio">
+                                                        <div class="content img-in-ratio"> 
+                                                            <img  src="./images/BiaTruyen/Ore no Onna Tomodachi ga Saikou ni Kawaii.jpg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="others-info">
+                                                    <h5 class="others-name"><a href="">Ore no Onna Tomodachi ga Saikou ni Kawaii</a></h5>
+                                                    <small class="series-summary-2">Ore no Onna Tomodachi ga Saikou ni Kawaii Ore no Onna Tomodachi ga Saikou ni Kawaii Ore no Onna Tomodachi ga Saikou ni Kawaii</small>
+                                                </div>
+                                            </li>
+                                        <!-- @endforeach -->
+                                    </ul>
+                                </main>
+                            </section>
+                        
+                        <!-- @endif -->
+                        <section class="basic-section">
+                            <header class="sect-header">
+                                <span class="sect-title">Truyện Nổi Bật</span>
+                            </header>
+                            <main class="d-lg-block">
+                                <ul class="others-list">
+                                    <!-- @foreach($novel_uploaded as $novel_up) -->
+                                        <li>
+                                            <div class="others-img no-padding">
+                                                <div class="a6-ratio">
+                                                    <div class="content img-in-ratio"> 
+                                                        <img  src="./images/BiaTruyen/Ore no Onna Tomodachi ga Saikou ni Kawaii.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="others-info">
+                                                <h5 class="others-name"><a href="">Ore no Onna Tomodachi ga Saikou ni Kawaii</a></h5>
+                                                <small class="series-summary-2">Ore no Onna Tomodachi ga Saikou ni Kawaii Ore no Onna Tomodachi ga Saikou ni Kawaii</small>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="others-img no-padding">
+                                                <div class="a6-ratio">
+                                                    <div class="content img-in-ratio"> 
+                                                        <img  src="./images/BiaTruyen/Ore no Onna Tomodachi ga Saikou ni Kawaii.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="others-info">
+                                                <h5 class="others-name"><a href="">Ore no Onna Tomodachi ga Saikou ni Kawaii</a></h5>
+                                                <small class="series-summary-2">Ore no Onna Tomodachi ga Saikou ni Kawaii Ore no Onna Tomodachi ga Saikou ni Kawaii</small>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="others-img no-padding">
+                                                <div class="a6-ratio">
+                                                    <div class="content img-in-ratio"> 
+                                                        <img  src="./images/BiaTruyen/Ore no Onna Tomodachi ga Saikou ni Kawaii.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="others-info">
+                                                <h5 class="others-name"><a href="">Ore no Onna Tomodachi ga Saikou ni Kawaii</a></h5>
+                                                <small class="series-summary-2">Ore no Onna Tomodachi ga Saikou ni Kawaii Ore no Onna Tomodachi ga Saikou ni Kawaii</small>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="others-img no-padding">
+                                                <div class="a6-ratio">
+                                                    <div class="content img-in-ratio"> 
+                                                        <img  src="./images/BiaTruyen/Ore no Onna Tomodachi ga Saikou ni Kawaii.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="others-info">
+                                                <h5 class="others-name"><a href="">Ore no Onna Tomodachi ga Saikou ni Kawaii</a></h5>
+                                                <small class="series-summary-2">Ore no Onna Tomodachi ga Saikou ni Kawaii Ore no Onna Tomodachi ga Saikou ni Kawaii</small>
+                                            </div>
+                                        </li>
+                                    <!-- @endforeach -->
+                                </ul>
+                            </main>
+                        </section>
+                
             </div>
         </div>
     </main>
@@ -305,4 +474,21 @@
             <span style="color: #fff; font-weight: 700; margin-right: 20px;">© UmiBlog 2022 - Website đọc Truyện Tranh</span>
         </div>
     </footer>
+
+    <script src="./rating/starrr.js"></script>
+
+    <script>
+        $('#star1').starrr({
+          change: function(e, value){
+            if (value) {
+              $('.your-choice-was').show();
+              $('.choice').text(value);
+              $('#rating_star').val(value)
+            } else {
+              $('.your-choice-was').hide();
+            }
+          }
+        });
+        </script>
 </body>
+</html>
