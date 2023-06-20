@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/headroom.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Admin</title>
+</head>
+
+
+<body>
+    
+    <nav class="navbar navbar-expand-sm  bg-dark ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)">Bảng Điều Khiển</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)"><i class="fa fa-fw fa-home"></i></a>
+              </li>
+          
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fa fa-fw fa-edit"></i>Quản Lí Tài Khoản</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Danh Sách Tài Khoản</a></li>
+                  <li><a class="dropdown-item" href="#">Tài Khoản Vi Phạm</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Quản Lí Thể Loại</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fa fa-fw fa-edit"></i>Quản Lí Thể Loại</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Danh Sách Thể Loại</a></li>
+                  <li><a class="dropdown-item" href="#">Thêm Thể Loại</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fa fa-fw fa-edit"></i>Quản Lí Truyện</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Truyện Đã Đăng</a></li>
+                  <li><a class="dropdown-item" href="#">Truyện Đã Ẩn</a></li>
+                  
+                </ul>
+              </li>
+            </ul>
+          </div>
+            
+        </div>
+            <div class="">
+              <div class=" nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><img src="./images/Avatar/avatar.jpg" class="rounded-pill" height="50"></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i>Trang Cá Nhân</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa fa-pencil"></i>Quản Lí Truyện</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa fa-heart"></i>Truyện Yêu Thích</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa fa-power-off"></i>Đăng Xuất</a></li>
+                </ul>
+              </div>
+            </div>
+      </nav>
+
+      <!--content-->
+      <section>
+        <div class="content1">
+            <div class="data-content">
+               <div class="search-manager">
+                <form class="d-flex">
+                  <input class="form-control me-2" type="text" placeholder="Tìm Truyện">
+                  <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+                </form>
+               </div>
+              <table class="table table-striped secondary table-bordered">
+                <thead>
+                  <tr>
+                    <th>Avatar</th>
+                    <th>Email</th>
+                    <th>Họ Tên</th>
+                    <th>Trạng Thái</th>
+                    <th>Chức Năng</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img class="rounded-circle" src="./images/Avatar/avatar.jpg" height="80"></td>
+                    <td>nguyehuyne@gmail.com</td>
+                    <td>Nguyễn Huy</td>
+                    <td>Đang Hoạt Động</td>
+                    <td>
+                      <button type="button" class="btn btn-success">
+                        <i class="fa fa-check-square"></i> 
+                      </button>
+  
+                      <button type="button" class="btn btn-danger">
+                        <i class="fa fa-close"></i> 
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img class="rounded-circle" src="./images/Avatar/avatar.jpg" height="80"></td>
+                    <td>nguyehuyne@gmail.com</td>
+                    <td>Nguyễn Huy</td>
+                    <td>Đang Hoạt Động</td>
+                    <td>
+                      <button type="button" class="btn btn-success">
+                        <i class="fa fa-check-square"></i> 
+                      </button>
+  
+                      <button type="button" class="btn btn-danger">
+                        <i class="fa fa-close"></i> 
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img class="rounded-circle" src="./images/Avatar/avatar.jpg" height="80"></td>
+                    <td>nguyehuyne@gmail.com</td>
+                    <td>Nguyễn Huy</td>
+                    <td>Đang Hoạt Động</td>
+                    <td>
+                      <button type="button" class="btn btn-success">
+                        <i class="fa fa-check-square"></i> 
+                      </button>
+  
+                      <button type="button" class="btn btn-danger">
+                        <i class="fa fa-close"></i> 
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img class="rounded-circle" src="./images/Avatar/avatar.jpg" height="80"></td>
+                    <td>nguyehuyne@gmail.com</td>
+                    <td>Nguyễn Huy</td>
+                    <td>Đang Hoạt Động</td>
+                    <td>
+                      <button type="button" class="btn btn-success">
+                        <i class="fa fa-check-square"></i> 
+                      </button>
+  
+                      <button type="button" class="btn btn-danger">
+                        <i class="fa fa-close"></i> 
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img class="rounded-circle" src="./images/Avatar/avatar.jpg" height="80"></td>
+                    <td>nguyehuyne@gmail.com</td>
+                    <td>Nguyễn Huy</td>
+                    <td>Đang Hoạt Động</td>
+                    <td>
+                      <button type="button" class="btn btn-success">
+                        <i class="fa fa-check-square"></i> 
+                      </button>
+  
+                      <button type="button" class="btn btn-danger">
+                        <i class="fa fa-close"></i> 
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img class="rounded-circle" src="./images/Avatar/avatar.jpg" height="80"></td>
+                    <td>nguyehuyne@gmail.com</td>
+                    <td>Nguyễn Huy</td>
+                    <td>Đang Hoạt Động</td>
+                    <td>
+                      <button type="button" class="btn btn-success">
+                        <i class="fa fa-check-square"></i> 
+                      </button>
+  
+                      <button type="button" class="btn btn-danger">
+                        <i class="fa fa-close"></i> 
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+    </div>
+  </section>
+</body>
+</html>

@@ -9,57 +9,31 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/headroom.js"></script>
     <link rel="stylesheet" href="./css/read_chapter.css">
-    
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Read-chapter</title>
 </head>
 
 <body>
+  <!--nut thanh ben phai duoi cung-->
+  <section id="rd_side_icon">
+    <!-- @if($chapter->id == $min_id->id) -->
+    <!--kiem tra chap dau-->
+    <!-- <a href="" class="rd_sd-button_item col text-center {{ $chapter->id == $min_id->id ? 'isDisable' : '' }}"><i class="fas fa-backward"></i></a> -->
+    <!-- end kiem tra chap dau-->
+    <!-- @else -->
+        <a href="{{ url('chapter/'.$previous_chapter_id.'-'.$previous_chapter_slug->slug_chapter) }}" class="rd_sd-button_item col text-center {{ $chapter->id == $min_id->id ? 'isDisable' : '' }}"><i class="fa fa-backward"></i></a>
+    <!-- @endif                 -->
+        <a href="{{ url('novel/'.$chapter->novel->slug_novelname) }}" class="rd_sd-button_item col text-center"><i class="fa fa-home"></i></a>
+    <!-- @if($chapter->id == $max_id->id) -->
+    <!--kiem tra chap cuoi-->
+        <!-- <a href="" class="rd_sd-button_item col text-center {{ $chapter->id == $max_id->id ? 'isDisable' : '' }}"><i class="fas fa-forward"></i></a> -->
+    <!--end kiem tra chap cuoi-->
+        <!-- @else              -->
+        <a href="{{ url('chapter/'.$next_chapter_id.'-'.$next_chapter_slug->slug_chapter ) }}" class="rd_sd-button_item col text-center {{ $chapter->id == $max_id->id ? 'isDisable' : '' }}"><i class="fa fa-forward"></i></a>
+    <!-- @endif -->
+</section>
+<!--end nut thanh ben phai duoi cung-->
 
-<div class="vc">
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-        <a class="navbar-brand" href="javascript:void(0)"><img src="./images/logo.png" height="50"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mynavbar">
-            <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Link</a></li>
-                <li><a class="dropdown-item" href="#">Another link</a></li>
-                <li><a class="dropdown-item" href="#">A third link</a></li>
-                </ul>
-            </li>
-            </ul>
-        </div>
-            <form class="d-flex">
-            <input class="form-control me-2" type="text" placeholder="Search">
-            <button class="btn btn-primary" type="button">Search</button>
-            </form>
-        </div>
-        <div class="">
-            <div class=" nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><img src="./images/logo.png" class="rounded-pill" height="50"></a>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Trang Cá Nhân Nè</a></li>
-                <li><a class="dropdown-item" href="#">Link 2</a></li>
-                <li><a class="dropdown-item" href="#">Link 3</a></li>
-                </ul>
-            </div>
-        </div>
-  </nav>
-</div>
 
 <header>
     <div class="title-story col-md-12">
@@ -80,6 +54,7 @@
     </span>
     <a class="col text-center" href=""><i class="fa fa-forward"></i></a>
 </section> -->
+
 <div class="d-flex justify-content-center">
     <div class="content">       
         <section class="rd-basic_icon toolbar">
@@ -99,12 +74,16 @@
         </section>
          -->
          <section class="content-chapter">
-            <img class="img-fluid" src="./images/BiaTruyen/Ore no Onna Tomodachi ga Saikou ni Kawaii.jpg" alt="" >
-            <img class="img-fluid" src="./images/BiaTruyen/Chikan Saresou ni Natteiru S-kyuu Bishoujo wo Tasuketara Tonari no Seki no Osananajimi datta.jpg" alt="" >
-            <img class="img-fluid" src="./images/BiaTruyen/Kurasu-no-daikirai-na-joshi to-kekkon-suru-koto-ni-natta.jpg" alt="" >
-            <img class="img-fluid" src="./images/BiaTruyen/Ore no Onna Tomodachi ga Saikou ni Kawaii.jpg" alt="" >
+            
+            <img class="img-fluid" src="./images/BiaTruyen/003.jpg" alt="" >
+            <img class="img-fluid" src="./images/BiaTruyen/004.jpg" alt="" >
+            <img class="img-fluid" src="./images/BiaTruyen/005.jpg" alt="" >
+            <img class="img-fluid" src="./images/BiaTruyen/006.jpg" alt="" >
+			<img class="img-fluid" src="./images/BiaTruyen/007.jpg" alt="" >
         </section>
-        
+		<div class="button-home-story d-grid">
+			<a href="#" class="btn btn-primary btn-lg btn-block" role="button">QUAY VỀ TRANG TRUYỆN</a>
+		</div>
         <section class="rd-basic_icon toolbar col">
             <a href="" class="col icon-backwrad text-center"><i class="fa fa-backward"></i></a>
             <select name="select-chapter" class="custom-select select-chapter">
@@ -114,6 +93,7 @@
             </select>
             <a href="" class="col icon-forward text-center"><i class="fa fa-forward"></i></a>
         </section>
+		
     </div>
 </div>
 <footer style="background-color: #333; padding: 30px 10px;">

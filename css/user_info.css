@@ -1,0 +1,15 @@
+.form-group {
+    margin-bottom: 15px;
+}
+.button-change-password{
+    padding-top: 3%;
+}
+.form-user-info{
+    margin-top: 3%;
+    margin-right: 30%;
+    margin-left: 30%;
+    border: solid 1px;
+    padding: 3%;
+    display: inline-block;
+    /* margin-bottom: auto; */ 
+  }

@@ -1,48 +1,9 @@
-body {font-family: "Lato", sans-serif;}
-
-.dropdown-menu{
-    margin-right: 0px;
+.main {
+    margin-top: 9% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
-.dropdown-menu[data-bs-popper]{
-    left:auto !important;
-    right: 0;
-}
-
-.content{
-    margin-top: 80px;
-    margin-right: 11%; 
-    margin-left: 12%;
-}
-.top-tab_title.title-active {
-    background-color: rgba(25,26,26,.8);
-    color: #fff;
-    display: inline-block;
-    padding: 4px 8px;
-}
-
-.top-tab_title {
-    border-bottom: 2px solid transparent;
-    color: #aaa;
-    font-weight: 700;
-    margin-right: 10px;
-    font-family: "fantasy";
-}
-
-.top-tab_title.title-active i {
-    color: #f0bc00;
-    display: inline;
-}
-
-.fa, .far, .fas {
-    /* font-family: "Font Awesome 5 Free"; */
-    font-weight: 900;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-} 
 .truyen-moi-cap-nhat{
     max-width: 100%;
 }
@@ -96,7 +57,7 @@ body {font-family: "Lato", sans-serif;}
     font-size: 14px;
     /* font-size: 1.4rem; */
     font-weight: 700;
-    height: 4.2rem;
+    height: 2.2rem;
     line-height: 22px;
     /* line-height: 2rem; */
     margin-bottom: 4px;
@@ -217,3 +178,10 @@ h4{
     white-space: nowrap;
 }
 /*test slide show*/
+.col-md-2 {
+    flex: 0 0 auto;
+    width: 18.666667%;
+}
+.basic-section{
+    margin-bottom: 50px;
+}
